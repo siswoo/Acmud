@@ -1,0 +1,173 @@
+[gd_scene load_steps=3 format=3 uid="uid://b05q0r5mpd7wc"]
+
+[ext_resource type="Script" path="res://Scripts/tarea_1.gd" id="1_eawn3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_upq2f"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Tarea1" type="Node2D"]
+script = ExtResource("1_eawn3")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorFondo" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.894118, 0.894118, 0.894118, 1)
+
+[node name="TRespuesta" type="TextEdit" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_top = -148.0
+offset_right = 400.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/background_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Cuadro de respuestas"
+
+[node name="LTitulo1" type="Label" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -186.5
+offset_top = 50.0
+offset_right = 186.5
+offset_bottom = 108.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Puedes elegir una opción"
+
+[node name="LResultado" type="Label" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -92.0
+offset_top = -198.0
+offset_right = 92.0
+offset_bottom = -150.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "RESULTADO"
+
+[node name="LEnunciado" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -92.0
+offset_top = -74.0
+offset_right = 92.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "ENUNCIADO"
+
+[node name="LREnunciado" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -476.0
+offset_top = -24.0
+offset_right = 524.0
+offset_bottom = 116.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_upq2f")
+text = "ENUNCIADO"
+
+[node name="BOpcion1" type="Button" parent="CanvasLayer"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 50.0
+offset_top = -174.0
+offset_right = 150.0
+offset_bottom = -124.0
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.972549, 0.972549, 0.972549, 1)
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="BOpcion2" type="Button" parent="CanvasLayer"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 200.0
+offset_top = -174.0
+offset_right = 300.0
+offset_bottom = -124.0
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.972549, 0.972549, 0.972549, 1)
+theme_override_font_sizes/font_size = 30
+text = "2"
+
+[node name="BOpcion3" type="Button" parent="CanvasLayer"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 350.0
+offset_top = -174.0
+offset_right = 450.0
+offset_bottom = -124.0
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.972549, 0.972549, 0.972549, 1)
+theme_override_font_sizes/font_size = 30
+text = "3"
+
+[node name="BOpcion4" type="Button" parent="CanvasLayer"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 500.0
+offset_top = -174.0
+offset_right = 600.0
+offset_bottom = -124.0
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.972549, 0.972549, 0.972549, 1)
+theme_override_font_sizes/font_size = 30
+text = "4"
+
+[node name="BOpcion5" type="Button" parent="CanvasLayer"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 650.0
+offset_top = -174.0
+offset_right = 750.0
+offset_bottom = -124.0
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.972549, 0.972549, 0.972549, 1)
+theme_override_font_sizes/font_size = 30
+text = "5"
+
+[connection signal="button_up" from="CanvasLayer/BOpcion1" to="." method="_on_b_opcion_1_button_up"]
+[connection signal="button_up" from="CanvasLayer/BOpcion2" to="." method="_on_b_opcion_2_button_up"]
+[connection signal="button_up" from="CanvasLayer/BOpcion3" to="." method="_on_b_opcion_3_button_up"]
+[connection signal="button_up" from="CanvasLayer/BOpcion4" to="." method="_on_b_opcion_4_button_up"]
+[connection signal="button_up" from="CanvasLayer/BOpcion5" to="." method="_on_b_opcion_5_button_up"]
